@@ -27,20 +27,12 @@ export const productRepository = {
     return data as Product | null
   },
 
-  async decrementStock(id: number, quantity: number): Promise<void> {
-    // Primero verificamos stock disponible
-    const product = await this.findById(id)
-
-    if (!product) throw new Error(`Producto ${id} no encontrado`)
-    if (product.stock < quantity) {
-      throw new Error(`Stock insuficiente para "${product.name}". Disponible: ${product.stock}`)
-    }
-
+  async updateStock(id: number, newStock: number): Promise<void> {
     const { error } = await supabase
       .from('products')
-      .update({ stock: product.stock - quantity })
+      .update({ stock: newStock })
       .eq('id', id)
 
-    if (error) throw new Error(`Error al actualizar stock de producto ${id}: ${error.message}`)
+    if (error) throw new Error(`Error al actualizar stock del producto ${id}: ${error.message}`)
   },
 }
