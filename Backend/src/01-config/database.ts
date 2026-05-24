@@ -1,12 +1,12 @@
 import { createClient } from '@supabase/supabase-js'
 import dotenv from 'dotenv'
 
-dotenv.config()
+dotenv.config() // Carga las variables de entorno desde el archivo .env
 
-const supabaseUrl = process.env.SUPABASE_URL
 const supabaseKey = process.env.SUPABASE_ANON_KEY
+const supabaseUrl = process.env.SUPABASE_URL
 
-if (!supabaseUrl || !supabaseKey) {
+if (!supabaseUrl || !supabaseKey) { // Validación para asegurar que las variables de entorno necesarias están presentes
   throw new Error('Faltan variables de entorno: SUPABASE_URL o SUPABASE_ANON_KEY')
 }
 

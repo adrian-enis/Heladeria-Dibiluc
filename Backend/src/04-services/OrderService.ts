@@ -20,9 +20,9 @@ export const orderService = {
         if (!product) {
           throw new Error(`Producto ${item.product_id} no encontrado`)
         }
-        if (product.stock < item.quantity) {
-          throw new Error(`Stock insuficiente para "${product.name}". Disponible: ${product.stock}`)
-        }
+        // if (product.stock < item.quantity) {                               // ProductService.decrementStock ya hace esta validación, no es necesario repetirla aquí
+        //   throw new Error(`Stock insuficiente para "${product.name}". Disponible: ${product.stock}`)
+        // }
 
         return {
           product_id: item.product_id,
