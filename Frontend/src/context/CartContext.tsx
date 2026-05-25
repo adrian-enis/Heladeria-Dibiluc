@@ -11,12 +11,14 @@ interface CartContextType {
     total: number
 }
 
-const CartContext = createContext<CartContextType | null>(null)
+const CartContext = createContext<CartContextType | null>(null) // El valor inicial es null para detectar uso fuera del provider
 
-const CART_KEY = 'heladeria_cart'
+const CART_KEY = 'heladeria_cart' // Clave para localStorage, así es fácil cambiarla si queremos usar otro almacenamiento o formato
 
-export function CartProvider({ children }: { children: React.ReactNode }) {
+// El CartProvider maneja el estado del carrito y lo sincroniza con localStorage
+export function CartProvider({ children }: { children: React.ReactNode }) { 
     const [items, setItems] = useState<CartItem[]>(() => {
+        
         try {
             const stored = localStorage.getItem(CART_KEY)
             return stored ? JSON.parse(stored) : []
