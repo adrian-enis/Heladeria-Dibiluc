@@ -7,7 +7,6 @@
 - `name` (VARCHAR(255), NOT NULL)
 - `description` (TEXT)
 - `price` (DECIMAL(10, 2), NOT NULL)
-- `stock` (INTEGER, NOT NULL)
 - `image_url` (VARCHAR(255))
 - `category` (TEXT, NOT NULL, DEFAULT 'boli', valores: `boli`, `vasito`)
 - `is_active` (BOOLEAN, NOT NULL, DEFAULT true) # Oculta un sabor sin borrarlo
@@ -33,7 +32,6 @@
 
 ## Constraints
 
-- `products.stock` no puede ser negativo
 - `products.price` no puede ser negativo
 - `order_items.quantity` debe ser mayor a 0
 

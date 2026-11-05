@@ -7,7 +7,7 @@ Como cliente, quiero ver todos los helados disponibles con sus imágenes y preci
 
 ### Criterios de aceptación
 1. El Sistema_Cliente mostrará una lista de todos los productos disponibles.
-2. Para cada producto, el Sistema_Cliente mostrará el nombre, precio y stock disponible.
+2. Para cada producto, el Sistema_Cliente mostrará el nombre y el precio.
 3. Mientras el catálogo se está cargando, el Sistema_Cliente mostrará skeleton loaders.
 
 ---
@@ -19,11 +19,9 @@ Como cliente, quiero agregar y quitar productos del carrito, para construir mi p
 
 ### Criterios de aceptación
 1. Cuando un cliente seleccione un producto, el Sistema_Cliente agregará el producto al Carrito.
-2. Cuando un cliente intente agregar un producto, el Sistema_Cliente verificará que la cantidad solicitada no exceda el stock disponible.
-3. Si la cantidad solicitada excede el stock, el Sistema_Cliente mostrará un mensaje de error y evitará la adición.
-4. El Sistema_Cliente permitirá incrementar, decrementar y eliminar productos del Carrito.
-5. El Sistema_Cliente mostrará el total acumulado del Carrito en tiempo real.
-6. Cuando se modifique el Carrito, el Sistema_Cliente aplicará micro‑interacciones visuales.
+2. El Sistema_Cliente permitirá incrementar, decrementar y eliminar productos del Carrito.
+3. El Sistema_Cliente mostrará el total acumulado del Carrito en tiempo real.
+4. Cuando se modifique el Carrito, el Sistema_Cliente aplicará micro‑interacciones visuales.
 
 ---
 
@@ -62,6 +60,7 @@ Como cliente, quiero enviar mi pedido por WhatsApp, para coordinar el pago y la 
 1. Cuando el cliente complete el formulario de Checkout, el Sistema_Cliente generará un mensaje preformateado con los detalles del pedido.
 2. El Sistema_Cliente incluirá en el mensaje: lista de productos con cantidades, datos del cliente (Nombre y Teléfono) y monto total.
 3. El Sistema_Cliente redirigirá automáticamente al WhatsApp_Corporativo con el mensaje preformateado usando el formato `wa.me`.
+4. La disponibilidad de los productos se confirma por WhatsApp al recibir el pedido.
 
 ---
 

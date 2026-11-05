@@ -7,5 +7,5 @@ Sistema web transaccional para exploración de catálogo, gestión de carrito y 
 - **Sistema_Cliente**: Interfaz para que el usuario vea productos y realice pedidos.
 - **Carrito**: Colección temporal de productos seleccionados.
 - **Pedido**: Solicitud creada con productos, total y datos del cliente.
-- **Producto**: Helado con nombre, precio y stock.
+- **Producto**: Helado con nombre y precio. La disponibilidad se confirma por WhatsApp.
 - **Checkout**: Proceso donde el usuario confirma su pedido.
