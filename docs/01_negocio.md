@@ -3,6 +3,12 @@
 ## Introducción
 Sistema web transaccional para exploración de catálogo, gestión de carrito y pedidos vía WhatsApp, con panel administrativo para ventas y reportes.
 
+## Datos del negocio
+- **Ubicación**: Puerto Ordaz, Av. Atlántico.
+- **Contacto**: WhatsApp 0412 1941375.
+- **Pago**: de contado.
+- **Productos**: chupis (paquete de 12), bolis, helados de vaso, paletas cubiertas y barquillas.
+
 ## Glosario (MVP)
 - **Sistema_Cliente**: Interfaz para que el usuario vea productos y realice pedidos.
 - **Carrito**: Colección temporal de productos seleccionados.
