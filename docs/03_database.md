@@ -49,6 +49,16 @@ Las piezas internas viven en el esquema `private`, que no se expone por la API.
 
 Errores de `create_order`, en el campo `message`: `INVALID_CUSTOMER`, `INVALID_ITEMS`, `PRODUCT_NOT_FOUND`, `OUT_OF_STOCK`.
 
+## Seguridad
+
+Con `20261105001000_restrict_public_access.sql` aplicada:
+
+- `products`: lectura pública solo de productos activos
+- `orders` y `order_items`: sin acceso directo; los pedidos se crean con `create_order`
+- Esquema `private`: sin acceso público
+
+Esta migración se aplica al pasar el frontend a Supabase, porque el backend Express escribe con la `anon key`.
+
 ## Endpoints (MVP)
 
 - `GET   /api/products` — listado de productos
