@@ -30,7 +30,8 @@ Este sistema está diseñado como un MVP funcional, con una arquitectura simple,
 
 ## Base de Datos
 
-- **Motor**: PostgreSQL
+- **Motor**: PostgreSQL (Supabase)
+- **Migraciones**: `supabase/migrations/`, se aplican en orden
 - **Acceso a Datos**: Repository pattern
 
 ---
