@@ -5,9 +5,9 @@ Sistema web transaccional para exploración de catálogo, gestión de carrito y 
 
 ## Datos del negocio
 - **Ubicación**: Puerto Ordaz, Av. Atlántico.
-- **Contacto**: WhatsApp 0412 1941375.
+- **Contacto**: WhatsApp 0412 1941375, Instagram @helados_dibiluc.
 - **Pago**: de contado.
-- **Productos**: chupis (paquete de 12), bolis, helados de vaso, paletas cubiertas y barquillas.
+- **Productos**: bolsas de chupis cremosos y cítricos, tinas, tinas de 250 g, paletas cubiertas y barquillas.
 
 ## Glosario (MVP)
 - **Sistema_Cliente**: Interfaz para que el usuario vea productos y realice pedidos.
