@@ -36,7 +36,6 @@ export function CartItemRow({ item }: Props) {
           <button
             className="qty-btn"
             onClick={() => updateQuantity(product.id, quantity + 1)}
-            disabled={quantity >= product.stock}
           >+</button>
         </div>
         <p className="cart-item-subtotal">${subtotal.toFixed(2)}</p>

@@ -38,7 +38,6 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
 
             if (existing) {
                 // Si ya está en el carrito, incrementa quantity
-                if (existing.quantity >= product.stock) return prev // respeta stock
                 return prev.map(i =>
                     i.product.id === product.id
                         ? { ...i, quantity: i.quantity + 1 }
@@ -89,7 +88,6 @@ export function useCart() {
 /**
  *localStorage se inicializa en el useState — el carrito se restaura automáticamente al recargar 
  la página sin ningún useEffect extra.
-addItem respeta el stock — si quantity >= product.stock no agrega más, cumpliendo la user story 2
 useCart está en el mismo archivo — no necesita su propio archivo porque es simplemente un 
 wrapper del contexto. El hook useProducts sí va separado porque tiene lógica propia (fetch, loading, error)
  * 
