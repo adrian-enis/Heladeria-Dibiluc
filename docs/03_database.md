@@ -36,6 +36,10 @@
 - `order_items.quantity` debe ser mayor a 0
 - `products`: no se repite la combinación de `category` y `name`
 
+## Catálogo inicial
+
+`supabase/seed.sql` carga los productos de los afiches. Los que no tienen precio confirmado quedan con `is_active = false` hasta tenerlo.
+
 ## Funciones
 
 Las piezas internas viven en el esquema `private`, que no se expone por la API.
