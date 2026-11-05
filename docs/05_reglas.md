@@ -52,7 +52,8 @@ Este documento define reglas de trabajo para herramientas de asistencia por IA (
 - **Prioridad**: Responder primero lo solicitado; ofrecer alternativas solo si aportan directamente al mismo objetivo o el usuario pide opciones.
 - **Concisión**: Evitar tutoriales genéricos cuando la petición es operativa o localizada.
 - **Idioma**: Responder en español salvo que el usuario indique otro idioma.
-- **Documentación**: No crear ni modificar archivos en `docs/` salvo petición explícita del usuario.
+- **Documentación**: Revisar `docs/` en cada cambio y actualizarla en el mismo commit cuando quede desactualizada.
+- **Commits**: Cambios atómicos con Conventional Commits, `tipo(scope): descripción`. La lógica larga se divide en piezas pequeñas, cada una en su commit.
 
 ---
 
