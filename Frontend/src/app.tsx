@@ -1,12 +1,20 @@
+// src/App.tsx
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { CartProvider } from './context/CartContext'
+import { Home } from './pages/Home'
+import { Cart } from './pages/Cart'
+import { Checkout } from './pages/Checkout'
 
-function App() {
-
-
+export default function App() {
   return (
-    <>
-        <h1>Welcome to the Frontend!</h1>h1  
-    </>
+    <BrowserRouter>
+      <CartProvider>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/checkout" element={<Checkout />} />
+        </Routes>
+      </CartProvider>
+    </BrowserRouter>
   )
 }
-
-export default App
