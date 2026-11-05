@@ -146,7 +146,7 @@ Request
 
 ## Modelo de Dominio
 
-- **Producto**: `id`, `nombre`, `precio`, `stock`
+- **Producto**: `id`, `nombre`, `precio`, `stock`, `categoria`, `activo`
 - **Pedido**: `id`, `total`, `fecha`, `cliente_nombre`, `cliente_telefono`
 - **OrderItem**: `id`, `pedido_id`, `producto_id`, `cantidad`, `precio_unitario`
 
