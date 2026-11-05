@@ -14,8 +14,9 @@ Este sistema está diseñado como un MVP funcional, con una arquitectura simple,
 
 ## Frontend
 
-- **Framework**: React.js 19.2.4
-- **Build Tool**: Vite 6.x
+- **Framework**: React.js 19.2.x
+- **Rutas**: React Router 7
+- **Build Tool**: Vite 8.x
 - **Lenguaje**: TypeScript
 - **Estilos**: Tailwind CSS
 - **Gestión de Estado**: Context API + `localStorage`
@@ -73,7 +74,7 @@ src/
 ├── hooks/             # Custom hooks (carrito, productos)
 ├── services/          # Llamadas a API
 ├── types/             # Interfaces TypeScript (Product, CartItem, Order)
-└── app.tsx
+└── App.tsx
 ```
 
 ## Gestión de Estado
