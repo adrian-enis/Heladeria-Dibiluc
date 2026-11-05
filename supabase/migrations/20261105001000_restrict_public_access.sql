@@ -1,6 +1,4 @@
 -- El navegador solo puede leer productos activos y llamar a create_order.
--- OJO: el backend Express escribe con la anon key, así que deja de funcionar
--- en cuanto se aplique este archivo. Aplicarlo al cambiar el frontend a Supabase.
 
 alter table public.products enable row level security;
 alter table public.orders enable row level security;
