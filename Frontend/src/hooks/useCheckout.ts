@@ -30,7 +30,7 @@ export function useCheckout() {
         i => `• ${i.product.name} x${i.quantity} — $${(i.product.price * i.quantity).toFixed(2)}`
       )
       const message = [
-        `🍦 *Pedido Heladería Dibuluc*`,
+        `🍦 *Pedido Heladería Dibiluc*`,
         ``,
         `👤 ${customerName}`,
         `📞 ${customerPhone}`,

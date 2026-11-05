@@ -1,4 +1,4 @@
-# Database Schema - Heladería Dibuluc (MVP)
+# Database Schema - Heladería Dibiluc (MVP)
 
 ## Tables
 

@@ -1,4 +1,4 @@
-# Requerimientos de Negocio - Heladería Dibuluc
+# Requerimientos de Negocio - Heladería Dibiluc
 
 ## Introducción
 Sistema web transaccional para exploración de catálogo, gestión de carrito y pedidos vía WhatsApp, con panel administrativo para ventas y reportes.

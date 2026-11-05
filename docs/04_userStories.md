@@ -1,4 +1,4 @@
-# User Stories - Heladería Dibuluc (MVP)
+# User Stories - Heladería Dibiluc (MVP)
 
 ## 1. Product Catalog
 

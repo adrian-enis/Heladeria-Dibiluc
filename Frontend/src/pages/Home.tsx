@@ -13,7 +13,7 @@ export function Home() {
         <div className="page-home">
             <header className="home-header">
                 <div className="home-header-title">
-                    <h1 className="brand-name">Heladería<br />Dibuluc</h1>
+                    <h1 className="brand-name">Heladería<br />Dibiluc</h1>
                     <p className="brand-tagline">Sabores que enamoran 🍦</p>
                 </div>
                 {totalItems > 0 && (

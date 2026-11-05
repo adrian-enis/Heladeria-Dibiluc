@@ -1,4 +1,4 @@
-# Reglas para asistentes IA - Heladería Dibuluc
+# Reglas para asistentes IA - Heladería Dibiluc
 
 ## Introducción
 
