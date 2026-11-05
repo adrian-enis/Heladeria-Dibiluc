@@ -45,6 +45,9 @@ Las piezas internas viven en el esquema `private`, que no se expone por la API.
 - `private.normalize_order_items(items)` — valida la lista, aplica los topes (30 líneas, 100 unidades por producto) y suma las líneas repetidas
 - `private.reserve_product_stock(producto, cantidad)` — bloquea el producto, comprueba y descuenta el stock
 - `private.save_order(nombre, teléfono, líneas)` — guarda el pedido y sus líneas, y calcula el total
+- `public.create_order(p_customer_name, p_customer_phone, p_items)` — único punto público para crear pedidos; une las piezas anteriores en una sola transacción
+
+Errores de `create_order`, en el campo `message`: `INVALID_CUSTOMER`, `INVALID_ITEMS`, `PRODUCT_NOT_FOUND`, `OUT_OF_STOCK`.
 
 ## Endpoints (MVP)
 
