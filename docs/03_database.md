@@ -31,6 +31,12 @@
 - One-to-many entre `orders` y `order_items`
 - One-to-many entre `products` y `order_items`
 
+## Constraints
+
+- `products.stock` no puede ser negativo
+- `products.price` no puede ser negativo
+- `order_items.quantity` debe ser mayor a 0
+
 ## Endpoints (MVP)
 
 - `GET   /api/products` — listado de productos
