@@ -1,6 +1,6 @@
 // src/hooks/useCheckout.ts
 import { useState } from 'react'
-import { orderService } from '../sevices/orderService'
+import { orderService } from '../services/orderService'
 import { useCart } from '../context/CartContext'
 import type { Order } from '../types/index'
 

@@ -1,6 +1,6 @@
 // src/hooks/useProducts.ts
 import { useEffect, useState } from 'react'
-import { productService } from '../sevices/productService'
+import { productService } from '../services/productService'
 import type { Product } from '../types/index'
 
 export function useProducts() {
