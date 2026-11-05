@@ -44,6 +44,7 @@ Las piezas internas viven en el esquema `private`, que no se expone por la API.
 - `private.validate_order_customer(nombre, teléfono)` — valida los datos del cliente y los devuelve sin espacios sobrantes
 - `private.normalize_order_items(items)` — valida la lista, aplica los topes (30 líneas, 100 unidades por producto) y suma las líneas repetidas
 - `private.reserve_product_stock(producto, cantidad)` — bloquea el producto, comprueba y descuenta el stock
+- `private.save_order(nombre, teléfono, líneas)` — guarda el pedido y sus líneas, y calcula el total
 
 ## Endpoints (MVP)
 
