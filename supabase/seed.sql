@@ -1,28 +1,37 @@
--- Catálogo según los afiches. Los productos sin precio confirmado quedan ocultos
--- (is_active = false) hasta tener su precio. Se puede repetir sin duplicar filas.
+-- Catálogo y precios confirmados por el negocio. Se puede repetir sin duplicar filas;
+-- no cambia los precios de los productos que ya existen.
 
-insert into public.products (name, description, price, category, is_active) values
-  ('Chupis de fresa',     'Paquete de 12 chupis.', 5.00, 'chupi', true),
-  ('Chupis de mantecado', 'Paquete de 12 chupis.', 5.00, 'chupi', true),
-  ('Chupis de ron pasas', 'Paquete de 12 chupis.', 5.00, 'chupi', true),
-  ('Chupis de chocolate', 'Paquete de 12 chupis.', 5.00, 'chupi', true),
+insert into public.products (name, description, price, category) values
+  ('Chupis de fresa',     'Bolsa de 12 chupis cremosos.', 5.00, 'chupi'),
+  ('Chupis de mantecado', 'Bolsa de 12 chupis cremosos.', 5.00, 'chupi'),
+  ('Chupis de ron pasas', 'Bolsa de 12 chupis cremosos.', 5.00, 'chupi'),
+  ('Chupis de chocolate', 'Bolsa de 12 chupis cremosos.', 5.00, 'chupi'),
+  ('Chupis cítricos',     'Bolsa de chupis cítricos.',    4.00, 'chupi'),
 
-  ('Vaso de fresa',       null, 0, 'vaso', false),
-  ('Vaso de mantecado',   null, 0, 'vaso', false),
-  ('Vaso de chocolate',   null, 0, 'vaso', false),
-  ('Vaso de arequipe',    null, 0, 'vaso', false),
-  ('Vaso de oreo',        null, 0, 'vaso', false),
-  ('Vaso de ron pasas',   null, 0, 'vaso', false),
-  ('Vaso napolitano',     null, 0, 'vaso', false),
+  ('Tina de fresa',     null, 1.40, 'vaso'),
+  ('Tina de mantecado', null, 1.40, 'vaso'),
+  ('Tina de chocolate', null, 1.40, 'vaso'),
+  ('Tina de arequipe',  null, 1.40, 'vaso'),
+  ('Tina de oreo',      null, 1.40, 'vaso'),
+  ('Tina de ron pasas', null, 1.40, 'vaso'),
+  ('Tina napolitana',   null, 1.40, 'vaso'),
 
-  ('Paleta de samba',     null, 0, 'paleta', false),
-  ('Paleta de galleta',   null, 0, 'paleta', false),
-  ('Paleta de mantecado', null, 0, 'paleta', false),
-  ('Paleta de chocolate', null, 0, 'paleta', false),
-  ('Paleta de fresa',     null, 0, 'paleta', false),
-  ('Paleta de arequipe',  null, 0, 'paleta', false),
-  ('Paleta de oreo',      null, 0, 'paleta', false),
-  ('Paleta de ron pasas', null, 0, 'paleta', false),
+  ('Tina de fresa 250 g',     null, 2.30, 'vaso'),
+  ('Tina de mantecado 250 g', null, 2.30, 'vaso'),
+  ('Tina de chocolate 250 g', null, 2.30, 'vaso'),
+  ('Tina de arequipe 250 g',  null, 2.30, 'vaso'),
+  ('Tina de oreo 250 g',      null, 2.30, 'vaso'),
+  ('Tina de ron pasas 250 g', null, 2.30, 'vaso'),
+  ('Tina napolitana 250 g',   null, 2.30, 'vaso'),
 
-  ('Barquilla',           null, 0, 'barquilla', false)
+  ('Paleta de samba',     null, 1.40, 'paleta'),
+  ('Paleta de galleta',   null, 1.40, 'paleta'),
+  ('Paleta de mantecado', null, 1.40, 'paleta'),
+  ('Paleta de chocolate', null, 1.40, 'paleta'),
+  ('Paleta de fresa',     null, 1.40, 'paleta'),
+  ('Paleta de arequipe',  null, 1.40, 'paleta'),
+  ('Paleta de oreo',      null, 1.40, 'paleta'),
+  ('Paleta de ron pasas', null, 1.40, 'paleta'),
+
+  ('Barquilla', null, 1.20, 'barquilla')
 on conflict (category, name) do nothing;

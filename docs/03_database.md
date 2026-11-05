@@ -38,7 +38,7 @@
 
 ## Catálogo inicial
 
-`supabase/seed.sql` carga los productos de los afiches. Los que no tienen precio confirmado quedan con `is_active = false` hasta tenerlo.
+`supabase/seed.sql` carga el catálogo y los precios confirmados por el negocio.
 
 ## Funciones
 
