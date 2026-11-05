@@ -37,6 +37,12 @@
 - `products.price` no puede ser negativo
 - `order_items.quantity` debe ser mayor a 0
 
+## Funciones
+
+Las piezas internas viven en el esquema `private`, que no se expone por la API.
+
+- `private.validate_order_customer(nombre, teléfono)` — valida los datos del cliente y los devuelve sin espacios sobrantes
+
 ## Endpoints (MVP)
 
 - `GET   /api/products` — listado de productos
