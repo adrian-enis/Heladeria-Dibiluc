@@ -8,7 +8,7 @@
 - `description` (TEXT)
 - `price` (DECIMAL(10, 2), NOT NULL)
 - `image_url` (VARCHAR(255))
-- `category` (TEXT, NOT NULL, DEFAULT 'boli', valores: `boli`, `vasito`)
+- `category` (TEXT, NOT NULL, DEFAULT 'chupi', valores: `chupi`, `boli`, `vaso`, `paleta`, `barquilla`)
 - `is_active` (BOOLEAN, NOT NULL, DEFAULT true) # Oculta un sabor sin borrarlo
 
 ### `orders`
@@ -34,6 +34,7 @@
 
 - `products.price` no puede ser negativo
 - `order_items.quantity` debe ser mayor a 0
+- `products`: no se repite la combinación de `category` y `name`
 
 ## Funciones
 
